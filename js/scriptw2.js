@@ -41,7 +41,7 @@ let student = {
 }
 
 function createStudent() {  
-    // () = geen parameters 
+    // = geen parameters 
     let data = [];
     //Using an array, we are storing all the answers as new elements of that array.
     data.push(prompt(message:'Name?'));
