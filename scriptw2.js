@@ -37,17 +37,26 @@ let student = {
 }
 
 function createStudent () {  // () = geen parameters 
-
+    let data = [];
+    //Using an array, we are storing all the answers as new elements of that array.
+    data.push(prompt('Name?'));
+    data.push(prompt('Age?'));
+    data.push(prompt('Degree?'));
+    student.setPersonalDetails(data); // data doorgeven aan PersonalDetails
+    
+    while(true){
+            let c = prompt('Course?');
+        if(c){
+        student.addCourse(c);
+    }else{         
+        break;
+    }
+ }
 
 }
 
 
-let data = [];
-//Using an array, we are storing all the answers as new elements of that array.
-data.push(prompt('Name?'));
-data.push(prompt('Age?'));
-data.push(prompt('Degree?'));
-student.setPersonalDetails(data);
+
 
 //example of using the rest operator: amount of arguments is not fixed
 
@@ -55,12 +64,5 @@ student.addCourse('WE', 'WDA');
 student.addCourse('Programming Essentials');
 student.addCourse('Programming Advanced', 'Android', 'iOS', 'Design');
 
-// while(true){
-//     let c = prompt('Course?');
-//     if(c){
-//        student.addCourse(c);
-//     }else{
-//         break;
-//     }
-// }
+
 student.showStudent();
