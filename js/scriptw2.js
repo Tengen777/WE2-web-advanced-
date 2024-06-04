@@ -3,7 +3,7 @@
     //copy paste van scrip 3 voor deze oefening
 //Herwerk oefening 6. Het moet mogelijk zijn om meerdere studenten aan te maken. We passen de volgende zaken aan:
 //DONE 1.We maken op onze html pagina een knop met de naam: Create Student
-//DONE 2.We voegen een eventlistener toe. We luisteren naar het event click. (helemaal in het begin, verkorte schrijfwijze) 
+//DONE 2.We voegen een eventlistener toe. We luisteren naar het event click. helemaal in het begin, verkorte schrijfwijze 
     //createStudent is de functie, moet uitgevourd worden wanner er geclickt wordt op 'create'
 //3.Wanneer we klikken op de knop, vragen we alle data op met behulp van de prompts. Net zoals in de vorige versie van de oefening.
     //Op het einde van de bevraging, maken we een nieuw studentenobject aan. Ditmaal gebruiken we een constructor functie. Het object slagen we op in een lijst van studenten. 
@@ -24,7 +24,7 @@ let student = {
         //The array on the right gets destructured into the variabels on the left
         //The place of the variabeles determines which data is assigned.
         //Position 0 in the array controls the name => this.name is set on first position and will take that value.
-        [this.name,this.age,this.degree] = details;
+        [this.name, this.age, this.degree] = details;
     },
     addCourse(...courses){
         //REST operator catches all arguments and bundles them into an array
@@ -44,6 +44,7 @@ let student = {
 function Student (name){
     
     this.name=name;
+    this.degree= 'DigX';
 
 }
 
@@ -77,6 +78,5 @@ function createStudent() {
 }
 
 //example of using the rest operator: amount of arguments is not fixed
-
 
 student.showStudent();
