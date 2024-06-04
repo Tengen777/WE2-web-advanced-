@@ -41,7 +41,7 @@ let student = {
 }
 
 function createStudent() {  
-    // = geen parameters 
+    // geen parameters 
     let data = [];
     //Using an array, we are storing all the answers as new elements of that array.
     data.push(prompt(message:'Name?'));
@@ -49,7 +49,7 @@ function createStudent() {
     data.push(prompt(message:'Degree?'));
     student.setPersonalDetails(data); 
     // data doorgeven aan PersonalDetails
-    // message: niet noodzakkelijk
+    // message niet noodzakkelijk
     
     while(true){
         let c = prompt(message:'Course?');
