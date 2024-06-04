@@ -40,6 +40,13 @@ let student = {
 
 }
 
+//constructor
+function Student (name){
+    
+    this.name=name;
+
+}
+
 function createStudent() {  
     // geen parameters 
     let data = [];
@@ -60,7 +67,12 @@ function createStudent() {
         }
     }
 
+    //make object, nieuwe variabele met andere namen 
+    let student= new Student('Mike');
+    let student2= new Student('Sol');
+// krijgt een student object
     console.log(student);
+    console.log(student2);
 
 }
 
