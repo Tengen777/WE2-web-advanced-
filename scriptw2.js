@@ -10,7 +10,7 @@
 
 console.log('script 3 linked!');
 
-    document.getElementById(elementId, 'create').addEventListener('click', createStudent); //createStudent is de functie, moet uitgevourd worden wanner er geclickt wordt op 'create'
+    document.getElementById(elementId: 'create').addEventListener('click', createStudent); //createStudent is de functie, moet uitgevourd worden wanner er geclickt wordt op 'create'
 
 
 let student = {
@@ -56,8 +56,6 @@ function createStudent () {  // () = geen parameters
     console.log(student);
 
 }
-
-
 
 
 //example of using the rest operator: amount of arguments is not fixed
