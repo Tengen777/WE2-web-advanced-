@@ -12,7 +12,7 @@
 
 console.log('script 3 linked!');
 
-    document.getElementById(elementId:'create').addEventListener(type:'click',createStudent); 
+    document.getElementById('create').addEventListener('click', createStudent); 
 
 
 let student = {
@@ -52,15 +52,15 @@ function createStudent() {
     // geen parameters 
     let data = [];
     //Using an array, we are storing all the answers as new elements of that array.
-    data.push(prompt(message:'Name?'));
-    data.push(prompt(message:'Age?'));
-    data.push(prompt(message:'Degree?'));
+    data.push(prompt('Name?'));
+    data.push(prompt('Age?'));
+    data.push(prompt('Degree?'));
     student.setPersonalDetails(data); 
     // data doorgeven aan PersonalDetails
     // message niet noodzakkelijk
     
     while(true){
-        let c = prompt(message:'Course?');
+        let c = prompt('Course?');
         if(c){
             student.addCourse(c);
         }else{         
