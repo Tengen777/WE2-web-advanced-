@@ -10,7 +10,7 @@
 
 console.log('script 3 linked!');
 
-    document.getElementById(elementId: 'create').addEventListener('click', createStudent); //createStudent is de functie, moet uitgevourd worden wanner er geclickt wordt op 'create'
+    document.getElementById(elementId, 'create').addEventListener('click', createStudent); //createStudent is de functie, moet uitgevourd worden wanner er geclickt wordt op 'create'
 
 
 let student = {
@@ -45,13 +45,15 @@ function createStudent () {  // () = geen parameters
     student.setPersonalDetails(data); // data doorgeven aan PersonalDetails
     
     while(true){
-            let c = prompt('Course?');
+        let c = prompt('Course?');
         if(c){
-        student.addCourse(c);
-    }else{         
-        break;
+            student.addCourse(c);
+        }else{         
+            break;
+        }
     }
- }
+
+    console.log(student);
 
 }
 
@@ -59,10 +61,6 @@ function createStudent () {  // () = geen parameters
 
 
 //example of using the rest operator: amount of arguments is not fixed
-
-student.addCourse('WE', 'WDA');
-student.addCourse('Programming Essentials');
-student.addCourse('Programming Advanced', 'Android', 'iOS', 'Design');
 
 
 student.showStudent();
