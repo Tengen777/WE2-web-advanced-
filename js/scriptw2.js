@@ -17,6 +17,7 @@ console.log('script linked!');
 
 let listOfStudents= [];
 
+
 //constructor
 function Student (name, age, degree){
     
