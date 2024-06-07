@@ -8,10 +8,17 @@ let color = {
     },
     
     setColor: function(r, g, b) {
+       
+     if (r === invullen || g === invullen || b === invullen) {
+            console.log("Alle waarden moeten aanwezig zijn.");
+            return;
+       
         this.nR = r;
         this.nG = g;
         this.nB = b;
     }
+
+
 };
 
 color.setColor(12, 34, 56);
