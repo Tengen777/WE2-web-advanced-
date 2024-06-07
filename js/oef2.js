@@ -1,3 +1,4 @@
+"user strict"
 let color = {
     nR: 0,
     nG: 0,
