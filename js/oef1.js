@@ -5,7 +5,7 @@ let color = {
 
     showColor: function() {
         console.log(`rgb(${this.nR}, ${this.nG}, ${this.nB})`);
-    }
+    },
 
 
     setColor: function(r, g, b) {
@@ -14,3 +14,12 @@ let color = {
         this.nB = b;
     }
 };
+
+
+
+color.setColor(12,34,56);
+color.showColor();
+color.setColor(255,124,56);
+color.showColor();
+color.setColor(255,0,100);
+color.showColor();
