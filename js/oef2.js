@@ -12,17 +12,23 @@ let color = {
      if (r === invullen || g === invullen || b === invullen) {
             console.log("Alle waarden moeten aanwezig zijn.");
             return;
-       
-        this.nR = r;
-        this.nG = g;
-        this.nB = b;
-    }
+           
+             }
 
+    if (r < 0 || r > 255 || g < 0 || g > 255 || b < 0 || b > 255) {
+                console.log("Geen enkele waarde mag groter zijn dan 255 of kleiner dan 0.");
+                return;
+             }
+
+    this.nR = r;
+    this.nG = g;
+    this.nB = b;
+    console.log("Succes");
 
 };
 
 color.setColor(12, 34, 56);
-color.showColor(); // 
+color.showColor();
 color.setColor(255, 124, 56);
 color.showColor(); 
 color.setColor(255, 0, 100);
