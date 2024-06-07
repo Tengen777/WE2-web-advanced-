@@ -21,12 +21,16 @@ class Person {
         this.name = "Coco";
         this.power="fire";
         this.grade= "Genin";
-            this.sensei = "Kakashi";
-            this.power = "Thunder";
+            this.sensei = {
+                firstname:"Kakashi",
+                power: "Thunder",
+            }      
+    };
 
-    }
+    SayMyName(){
+        return this.name;
 
-
+}
 
 }
 
