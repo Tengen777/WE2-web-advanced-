@@ -29,8 +29,9 @@ let color = {
     }
 };
 
-
-
 let red = prompt('Rode waarde:');
 let green = prompt('Groene waarde:');
 let blue = prompt('Blauwe waarde:');
+
+color.setColor(red,green,blue);
+color.showColor();
