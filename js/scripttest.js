@@ -15,3 +15,21 @@ window.onload = function(){
 }
 
 
+
+class Person {
+    constructor(){
+        this.name = "Coco";
+        this.power="fire";
+        this.grade= "Genin";
+            this.sensei = "Kakashi";
+            this.power = "Thunder";
+
+    }
+
+
+
+}
+
+let a = new Person(); // heeft al een naam
+console.log(bb);
+
